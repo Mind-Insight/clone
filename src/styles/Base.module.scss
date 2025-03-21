@@ -1,0 +1,32 @@
+.toggle_switch {
+	display: inline-block;
+	min-width: 40px;
+	height: 24px;
+	border-radius: 19px;
+	background: #bfbfbf;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	transition-duration: 300ms;
+}
+.toggle_switch::after {
+	content: "";
+	height: 18px;
+	width: 18px;
+	border-radius: 17px;
+	background: #fff;
+	top: 3px;
+	left: 3px;
+	transition-duration: 300ms;
+	position: absolute;
+	z-index: 1;
+}
+.switch_on {
+	background: #FF71A3;
+}
+.switch_on::after {
+	left: 19px;
+}

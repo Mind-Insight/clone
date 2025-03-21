@@ -1,0 +1,13 @@
+.mapWrapper {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.mapContainer {
+	height: 308px;
+	width: 1171px;
+	border: 2px solid white;
+	border-radius: 32px;
+	overflow: hidden;
+}

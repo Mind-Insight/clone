@@ -1,0 +1,45 @@
+.profile_photo_container {
+	max-height: 101px;
+	// margin-bottom: 32px;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+
+	.profile_image {
+        @media (max-width: 450px) {
+            max-width: 80px;
+            max-height: 80px;
+        }
+	}
+
+	.profile_image_info {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		max-height: 92px;
+
+        @media (max-width: 450px) {
+            gap: 6px;
+        }
+		.image_title {
+			color: #252525;
+			font-size: 24px;
+
+            @media (max-width: 450px) {
+                font-size: 18px;
+            }
+		}
+
+		.image_subtitle {
+			color: rgba(37, 37, 37, 0.6);
+			line-height: 16.1px;
+			font-size: 14px;
+            font-weight: 400;
+
+            @media (max-width: 450px) {
+                font-size: 10px;
+                line-height: normal;
+            }
+		}
+	}
+}

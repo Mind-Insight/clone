@@ -1,0 +1,105 @@
+.container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 160px;
+	overflow: hidden;
+
+    @media (max-width: 450px) {
+        margin-bottom: 110px;
+    }
+}
+
+.title_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about_container {
+	width: 1440px;
+	background-color: white;
+	border-radius: 48px;
+	height: 565px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+
+    @media (max-width: 600px) {
+        height: 405px + 64px;
+    }
+}
+
+.title {
+    font-weight: 600;
+	margin-top: 64px;
+	margin-bottom: 64px;
+	width: 1188px;
+    display: flex;
+	height: 48px;
+	font-size: 36px;
+	color: #252525;
+	text-align: center;
+
+    @media (max-width: 600px) {
+        justify-content: center;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        font-size: 32px;
+    }
+}
+
+.add_container {
+	width: 618px;
+	// height: 287px;
+	flex: 0 0 auto;
+}
+
+.outer_container {
+	// height: 327px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.carousel_container {
+	width: 1886px;
+	display: flex;
+	gap: 20px;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	cursor: grab;
+    @media (max-width: 450px) {
+        width: 1240px;
+    }
+}
+
+.pages {
+	width: 44px;
+	height: 8px;
+	z-index: 1000;
+}
+
+.carousel_container::-webkit-scrollbar {
+	display: none;
+}
+
+.pages {
+	display: flex;
+	justify-content: center;
+	margin-top: 32px;
+	gap: 6px;
+	width: auto;
+}
+
+.circle {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #b0b0b0;
+	transition: transform 0.3s, background-color 0.3s;
+}
+
+.circle.active {
+	background-color: black;
+}

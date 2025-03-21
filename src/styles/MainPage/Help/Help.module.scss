@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+
+    @media (max-width: 850px) {
+        margin-top: 110px;
+    }
+
+    @media (max-width: 450px) {
+        margin-bottom: 110px;
+        margin-top: 110px;
+    }
+}
+
+.help_container {
+    max-width: 1188px;
+    width: 100%;
+    height: auto;
+}
+
+.help_text_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+
+    @media (max-width: 1190px) {
+        margin-bottom: 48px;
+    }
+
+    @media (max-width: 850px) {
+        margin-bottom: 48px;
+    }
+
+    @media (max-width: 360px) {
+        margin-bottom: 32px;
+    }
+}
+
+.help_text {
+    max-width: 355px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // overflow: hidden;
+    .underscore {
+        @media (max-width: 1190px) {
+            max-width: 309px;
+        }
+    
+        @media (max-width: 850px) {
+            max-width: 309px;
+        }
+    
+        @media (max-width: 460px) {
+            max-width: 232px;
+        }
+    }
+}
+
+.help_text span {
+    font-size: 36px;
+    font-weight: 600;
+    color: #252525;
+
+    @media (max-width: 1190px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 850px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 460px) {
+        font-size: 24px;
+    }
+}
+
+// help card
+
+.help_card_container {
+    max-width: 1188px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 40px;
+
+    @media (max-width: 850px) {
+        padding: 0 24px;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 460px) {
+        gap: 8px;
+        padding: 0 16px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}

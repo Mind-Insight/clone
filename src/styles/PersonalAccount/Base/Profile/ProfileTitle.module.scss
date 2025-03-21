@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: 911px) {
+        margin-bottom: 32px;
+    }
+
+    .account_name_container {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        .name {
+            font-size: 36px;
+            font-weight: 600;
+            color: #252525;
+
+            @media (max-width: 910px) {
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .link_container {
+        .image_link {
+            @media (max-width: 910px) {
+                max-width: 20px;
+                max-height: 20px;
+            }
+        }
+    }
+}

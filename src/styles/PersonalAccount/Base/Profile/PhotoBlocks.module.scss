@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .title {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        .text {
+            font-size: 14px;
+            color: rgba(37, 37, 37, 0.80);
+        }
+    }
+
+    .photos {
+        display: flex;
+        gap: 16px;
+
+        .photo_block {
+            padding: 42px;
+            background-color: #F6F6F6;
+            border-radius: 8px;
+        }
+    }
+}

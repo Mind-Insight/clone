@@ -1,0 +1,8 @@
+services:
+  frontend:
+    build:
+      context: .
+    ports:
+      - '3031:3000'
+    # env_file: .env
+    restart: unless-stopped

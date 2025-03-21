@@ -1,0 +1,55 @@
+.card {
+    cursor: pointer;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 248px;
+    // width: 100%;
+    padding: 24px;
+    height: 120px;
+	overflow: hidden;
+
+    @media (max-width: 1024px) {
+        max-width: 195px;
+        height: 94px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 193px;
+        height: 94px;
+    }
+
+    @media (max-width: 360px) {
+        max-width: 156px;
+        hiehgt: 60px;
+
+    }
+}
+
+.image_wrapper {
+	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 181px;
+	height: 80px;
+}
+
+.image {
+	position: absolute;
+	transition: opacity 0.4s ease-in-out, filter 0.4s ease-in-out;
+	opacity: 0;
+}
+
+.visible {
+	opacity: 1;
+}
+
+.image:hover {
+    scale: 1.01;
+}
+
+.active {
+	filter: brightness(1.0) saturate(1.5) contrast(1.2);
+}

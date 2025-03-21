@@ -1,0 +1,48 @@
+.container {
+    padding: 10px 8px;
+    display: flex;
+    gap: 8px;
+    border-radius: 6px;
+    max-width: 295px;
+    width: 100%;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+
+    .icon {
+        max-width: 14px;
+        max-height: 14px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .text {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(48, 48, 47, 0.70);
+        line-height: 16.8px;
+        transition: color 0.3s ease-in-out;
+    }
+}
+
+.active {
+    background-color: rgba(48, 48, 47, 0.05);
+
+    .text {
+        color: #30302F;
+    }
+
+    .icon {
+        transform: scale(1.1);
+    }
+}
+
+.indicator {
+    position: absolute;
+    left: 0;
+    top: 22%;
+    border-radius: 0px 99999px 99999px 0px;
+    background: var(--Main-Black-1, #30302F);
+    width: 3px;
+    height: 20px;
+}

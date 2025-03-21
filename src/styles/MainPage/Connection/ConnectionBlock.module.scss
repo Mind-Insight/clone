@@ -1,0 +1,238 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+    margin-top: 100px;
+
+    @media (max-width: 450px) {
+        margin-bottom: 110px
+    }
+}
+
+.connection_container {
+    border-radius: 48px;
+    max-width: 1440px;
+    max-height: 909px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    padding-top: 64px;
+    padding-left: 126px;
+    padding-bottom: 80px;
+
+    @media (max-width: 1024px) {
+        padding-top: 37px;
+        padding-left: 40px;
+        padding-bottom: 120px;
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 24px;
+        padding-top: 37px;
+        padding-bottom: 82px;
+    }
+
+    @media (max-width: 599px) {
+        padding: 32px 16px 48px 16px;
+        max-height: 1432px;
+    }
+}
+
+.main_block {
+    max-width: 887px;
+    max-height: 765px;
+
+    @media (max-width: 599px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 1352px;
+    }
+}
+
+.title_block {
+    max-width: 584px;
+    max-height: 103px;
+    margin-bottom: 73px;
+    display: flex;
+    align-content: start;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 70px;
+    }
+
+    @media (max-width: 599px) {
+        max-height: 111px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+}
+
+.title_image {
+    margin-top: 5%;
+    // position: absolute;
+    // right: -5px;
+    // top: 31px;
+
+    @media (max-width: 1024px) {
+        margin-top: 4%;
+    }
+
+    @media (max-width: 599px) {
+        max-width: 148px;
+        margin-top: 0;
+    }
+}
+
+
+.title_block span {
+    font-size: 36px;
+    font-weight: 600;
+    color: #252525;
+    white-space: nowrap;
+
+    @media (max-width: 1024px) {
+        font-size: 32px;
+        max-width: 300px;
+    }
+
+    @media (max-width: 599px) {
+        font-size: 24px;
+    }
+}
+
+.reasons {
+    display: flex;
+    margin-bottom: 120px;
+    gap: 16px;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 81px;
+    }
+
+    @media (max-width: 768px) {
+        gap: 24px;
+    }
+
+    @media (max-width: 599px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+}
+
+.counters {
+    max-width: 525px;
+    column-gap: 77px;
+    display: flex;
+
+    @media (max-width: 1024px) {
+        gap: 16px;
+    }
+
+    @media (max-width: 599px) {
+        order: 1;
+    }
+}
+
+.left_counter, .right_counter {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @media (max-width: 1024px) {
+        gap: 32px;
+    }
+
+    @media (max-width: 768px) {
+        gap: 24px;
+    }
+
+    @media (max-width: 599px) {
+        gap: 32px;
+    }
+}
+
+.right_counter_top,
+.right_counter_bottom,
+.left_counter_top,
+.left_counter_bottom {
+    max-width: 224px;
+    max-height: 123px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        max-width: 171px;
+    }
+
+    @media (max-width: 599px) {
+        max-width: 156px;
+    }
+}
+
+.number {
+    font-size: 64px;
+    color: #FF71A3;
+    max-height: 77px;
+    font-weight: 600;
+
+    @media (max-width: 1024px) {
+        font-size: 48px;
+        max-height: 58px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 42px;
+        max-height: 50px;
+    }
+
+    @media (max-width: 599px) {
+        text-align: center;
+    }
+}
+
+.text {
+    font-size: 16px;
+    color: #FF71A3;
+    font-weight: 600;
+
+    @media (max-width: 1024px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+
+    @media (max-width: 599px) {
+        text-align: center;
+    }
+}
+
+.image_container {
+    position: absolute;
+    right: 0px;
+    bottom: 12px;
+
+    .image {
+        max-width: 40vw;
+        height: auto;
+        @media (max-width: 599px) {
+            max-width: 291px;
+            max-height: 271px;
+        }
+    }
+
+    @media (max-width: 599px) {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+}

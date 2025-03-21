@@ -1,0 +1,16 @@
+stages:
+  - deploy
+
+dev:
+  stage: deploy
+  allow_failure: false
+  tags:
+    - dev
+  only:
+    - main
+  # environment:
+  #   name: development
+  script:
+    - export TAG=":dev"
+    # - cp "$DEV_ENV" .env
+    - docker-compose up -d --build

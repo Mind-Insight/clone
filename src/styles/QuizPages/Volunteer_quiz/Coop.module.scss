@@ -1,0 +1,38 @@
+.coop_container {
+	display: flex;
+	gap: 24px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+.consult,
+.contacts {
+	display: flex;
+	flex-direction: column;
+	row-gap: 6px;
+    
+
+	.top_consult,
+	.top_contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+		font-size: 18px;
+	}
+
+	.bottom_consult,
+	.bottom_contacts {
+        max-width: 312px;
+		font-size: 14px;
+        line-height: 115%;
+		color: rgba(37, 37, 37, 0.6);
+	}
+}
+
+.text {
+	color: rgba(37, 37, 37, 0.8);
+	font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+}

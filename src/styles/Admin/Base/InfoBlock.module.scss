@@ -1,0 +1,137 @@
+.container {
+	margin-top: 32px;
+	width: 1395px;
+	height: 625px;
+
+	.title_up_container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		margin-bottom: 24px;
+		.title_up {
+			padding: 7.5px 0;
+			display: flex;
+			gap: 16px;
+			align-items: center;
+
+			.title_up_image {
+			}
+
+			.stroke {
+				height: 17px;
+				display: flex;
+				align-items: center;
+				font-weight: 400;
+				width: 4px;
+				color: #30302f;
+			}
+
+			.title_up_text {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 17px;
+				color: #30302f;
+			}
+		}
+
+		.admin_info {
+			display: flex;
+			gap: 12px;
+			align-items: center;
+
+			.admin_info_text {
+				letter-spacing: -0.04px;
+				color: #30302f;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 19.2px;
+			}
+		}
+	}
+
+	.title {
+		font-size: 47.863px;
+		font-weight: 500;
+		line-height: 63.817px;
+		color: #30302f;
+
+		margin-bottom: 16px;
+	}
+
+	.search_block {
+		padding: 8px 16px;
+		background-color: rgba(48, 48, 47, 0.05);
+		border-radius: 6px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+        margin-bottom: 24px;
+
+		.input_block {
+			display: flex;
+			max-width: 321px;
+			gap: 10px;
+			align-items: center;
+
+			.search_icon_container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 14px;
+			}
+
+			.search_input {
+				all: unset;
+				min-width: 263px;
+
+				&::placeholder {
+					line-height: 24px;
+					color: rgba(48, 48, 47, 0.5);
+					font-size: 16px;
+				}
+			}
+		}
+
+		.filter_buttons {
+			display: flex;
+			gap: 5px;
+
+			.columns,
+			.filters {
+				display: flex;
+				gap: 8px;
+				align-items: center;
+				cursor: pointer;
+				padding: 6.5px 12px;
+				background-color: rgba(0, 0, 51, 0.06);
+				border-radius: 4px;
+
+				.columns_text,
+				.filters_text {
+					color: #30302f;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+    .main_container {
+        width: 100%;
+        .info_blocks {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .line_block{
+                display: flex;
+            }
+
+            .top_line_block {
+                display: flex;
+                
+            }
+        }
+    }
+}

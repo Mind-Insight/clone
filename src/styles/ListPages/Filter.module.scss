@@ -1,0 +1,163 @@
+.container {
+	max-width: 285px;
+	width: 100%;
+	max-height: 674px;
+	padding: 24px 16px;
+	background-color: white;
+	border-radius: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	user-select: none;
+
+	/* Удалите этот блок, чтобы FilterBlock отображался на всех устройствах */
+	/* @media (max-width: 768px) {
+      display: none;
+    } */
+
+	.title {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		.title_top {
+			display: flex;
+			justify-content: space-between;
+
+			.title_top_text {
+				font-size: 20px;
+				font-weight: 500;
+			}
+
+			.clear {
+				display: flex;
+				gap: 6px;
+				padding: 4px;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+
+				.clear_text {
+					color: #ff71a3;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+		}
+
+		.title_search {
+			background: rgba(37, 37, 37, 0.02);
+			border: 1px solid rgba(37, 37, 37, 0.05);
+			border-radius: 9999px;
+			padding: 8px 12px;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+
+			input {
+				all: unset;
+			}
+
+			input::placeholder {
+				font-size: 14px;
+				color: #252525;
+				opacity: 50%;
+			}
+		}
+	}
+
+	.status {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+
+		.status_title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 21px;
+
+			.status_text {
+				font-size: 12px;
+				font-weight: 400;
+				color: rgba(37, 37, 37, 0.6);
+			}
+		}
+
+		.status_buttons {
+			display: flex;
+			gap: 8px;
+			flex-wrap: wrap;
+
+			.btn {
+				display: flex;
+				gap: 8px;
+				align-items: center;
+				padding: 4px 8px;
+				border-radius: 9999px;
+				background-color: rgba(37, 37, 37, 0.05);
+
+				.btn_text {
+					line-height: 12px;
+					font-size: 12px;
+				}
+			}
+
+			.btn.active {
+				background-color: #ff005214;
+				color: #c4004fe0;
+			}
+		}
+
+		.distances {
+			display: flex;
+			gap: 6px;
+			flex-wrap: wrap;
+
+			.distance_block {
+				display: flex;
+				gap: 6px;
+				align-items: center;
+				padding: 4px 8px;
+				color: #252525cc;
+				border: 1px solid #25252533;
+				border-radius: 48px;
+
+				.distance_text {
+					font-size: 12px;
+					font-weight: 500;
+				}
+			}
+
+			.distance_block.active {
+				background-color: #2525250d;
+			}
+		}
+
+		.choices {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+
+			.choice {
+				display: flex;
+				gap: 8px;
+				align-items: center;
+				height: 19px;
+			}
+		}
+	}
+
+	.submit_btn {
+		border: 1px solid #fb548f80;
+		border-radius: 48px;
+		color: #fb548f;
+		font-size: 14px;
+		padding: 8.5px 88px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: white;
+	}
+}
