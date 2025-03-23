@@ -163,9 +163,27 @@
 
 		&.need_help_btn {
 			background-color: #ff71a3;
+            transition: 0.3s ease;
+		}
+
+        &.need_help_btn:hover {
+			background-color: #FB548F;
+		}
+
+        &.need_help_btn:active {
+			background-color: #E34C81;
 		}
 
 		&.become_volunteer_btn {
+			background-color: #252525;
+            transition: 0.3s ease;
+		}
+
+        &.become_volunteer_btn:hover {
+			background-color: #252525E5;
+		}
+
+        &.become_volunteer_btn:active {
 			background-color: #252525;
 		}
 

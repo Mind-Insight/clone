@@ -31,6 +31,7 @@ const Steps = () => {
 							Зарегистрируйтесь
 						</div>
 						<div className={styles.sub_text}>
+							<br />
 							и пройдите модерацию
 						</div>
 					</StepsBlock>

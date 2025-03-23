@@ -58,7 +58,7 @@ a, button {
     transition: all 0.5s ease;
 }
 
-a:hover,
+/* a:hover,
 button:hover {
   transform: scale(1.05);
 }
@@ -66,4 +66,4 @@ button:hover {
 a:active,
 button:active {
   transform: scale(0.95);
-}
+} */

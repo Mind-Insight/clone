@@ -50,6 +50,10 @@
 				font-weight: 500;
 				gap: 32px;
 
+				a:hover {
+					color: #ff71a3;
+				}
+
 				@media (max-width: 1024px) {
 					gap: 24px;
 					font-size: 14px;
@@ -83,6 +87,19 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;
+						transition: 0.3s ease;
+					}
+
+					.enter_btn:hover {
+						background-color: #252525E5;
+						border: 1.5px solid #252525E5;
+						color: #FFF;
+					}
+
+					.enter_btn:active {
+						background-color: #252525;
+						border: 1.5px solid #252525;
+						color: #FFF;
 					}
 				}
 			}

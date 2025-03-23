@@ -97,7 +97,8 @@
 }
 
 .filter_section {
-    max-width: clamp(320px, 62vw, 1188px);
+    // max-width: clamp(320px, 62vw, 100%);
+	max-width: 1190px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
